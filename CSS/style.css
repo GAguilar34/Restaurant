@@ -30,10 +30,9 @@ body{
 }
 
 nav{
-   margin-top: 50px;
    background-color: white; 
    padding: 14px 20px;
-   margin: 12px 60px;
+   margin: 50px 60px 12px 60px;
    border-radius: 25px;
    border-left: 15px solid #E07800;
 }
@@ -61,24 +60,107 @@ nav ul a{
 }
 
 .descripcion{
+    margin: 50px 60px 12px 60px;
     border-top: 15px solid #E07800;
     background-color: white;
     padding: 10px;
     border-radius: 25px;
     font-size: 30px;
     text-align: center;
-    flex-wrap: wrap;
 }
 
 #Menu{
+    border-bottom: 3px solid #E07800;
+    padding-bottom: 8px; /* espacio entre el texto y la línea */
     text-align: center;
     color: chocolate;
     font-size: 35px;
 }
 
 #menu-card{
-   
+    border-radius: 25px;
+    margin: 50px 60px 12px 60px;
+    border-top: 15px solid #E07800;
+    border-bottom: 15px solid #E07800;
     background-color: white;
+}
+
+.tarjeta{
+    text-align: center;
+    background-color: #FFF2E2;
+    border-radius: 10px;
+    width: 155px;
+    padding: 12px;
+}
+
+.tarjetaCombos{
+    text-align: center;
+    background-color: #FFF2E2;
+    border-radius: 10px;
+    width: 455px;
+    height: 245px;
+    padding: 12px;
+}
+
+.Precio {
+    color: #E07800;
+    font-weight: bold;
+}
+
+#Bebidas{
+    margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 55px;
+}
+
+#bebidas{
+    font-size: 30px;
+    text-align: center;
+    color: chocolate;
+    font-weight: bolder;
+}
+
+#Alimentos{
+    margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 55px;
+}
+
+#Combos{
+    margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 55px;
+}   
+
+#ComplementosPostres{
+    margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 55px;
+}
+
+#comida{
+    font-size: 30px;
+    text-align: center;
+    color: chocolate;
+    font-weight: bolder;
+}
+
+#combos{
+    font-size: 30px;
+    text-align: center;
+    color: chocolate;
+    font-weight: bolder;
+}
+
+#complementos{
+    font-size: 30px;
+    text-align: center;
+    color: chocolate;
+    font-weight: bolder;
 }
 
 #Historia{
@@ -116,6 +198,6 @@ footer{
 img{
     width: 130px;
     height: 130px;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 10px;
 }
