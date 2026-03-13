@@ -89,17 +89,39 @@ nav ul a{
     text-align: center;
     background-color: #FFF2E2;
     border-radius: 10px;
-    width: 155px;
+    border: 2px solid #E07800;
+    width: 255px;
     padding: 12px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tarjeta:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.tarjeta:active{
+    transform: translateY(-5px) scale(1.2);
 }
 
 .tarjetaCombos{
     text-align: center;
     background-color: #FFF2E2;
     border-radius: 10px;
-    width: 455px;
-    height: 245px;
+    border: 2px solid #E07800;
+    width: 855px;
+    height: 345px;
     padding: 12px;
+}
+
+.tarjetaCombos:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.tarjetaCombos:active{
+    transform: translateY(-5px) scale(1.2);
 }
 
 .Precio {
@@ -108,7 +130,8 @@ nav ul a{
 }
 
 #Bebidas{
-    margin-left: 20px;
+    margin-left: 30px;
+    margin-bottom: 10px;
     display: flex;
     flex-wrap: wrap;
     gap: 55px;
@@ -122,21 +145,7 @@ nav ul a{
 }
 
 #Alimentos{
-    margin-left: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 55px;
-}
-
-#Combos{
-    margin-left: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 55px;
-}   
-
-#ComplementosPostres{
-    margin-left: 20px;
+    margin-left: 30px;
     display: flex;
     flex-wrap: wrap;
     gap: 55px;
@@ -149,14 +158,29 @@ nav ul a{
     font-weight: bolder;
 }
 
-#combos{
+#ComplementosPostres{
+    margin-bottom: 10px;
+    margin-left: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 55px;
+}
+
+#complementos{
     font-size: 30px;
     text-align: center;
     color: chocolate;
     font-weight: bolder;
 }
 
-#complementos{
+#Combos{
+    margin-left: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 55px;
+}   
+
+#combos{
     font-size: 30px;
     text-align: center;
     color: chocolate;
@@ -196,8 +220,8 @@ footer{
 }
 
 img{
-    width: 130px;
-    height: 130px;
+    width: 230px;
+    height: 230px;
     object-fit: contain;
     border-radius: 10px;
 }
