@@ -36,6 +36,7 @@ nav{
    margin: 50px 60px 12px 60px;
    border-radius: 25px;
    border-left: 15px solid #E07800;
+   border-right: 15px solid #E07800;
 }
 
 nav ul{
@@ -204,6 +205,8 @@ nav ul a{
 }
 
 #Contacto{
+    border-bottom: 3px solid #E07800;
+    padding-bottom: 8px;
     text-align: center;
     color: chocolate;
     font-size: 35px;
@@ -211,8 +214,10 @@ nav ul a{
 
 #contacto-card{
     border-left: 15px solid #E07800;
+    border-right: 15px solid #E07800;
     border-radius: 15px;
     background-color: white;
+    margin-bottom: 30px;
 }
 
 footer{
@@ -233,4 +238,45 @@ img{
     height: 230px;
     object-fit: contain;
     border-radius: 10px;
+}
+
+.FormularioDiseño{
+    margin-left: 20px;
+    margin-bottom: 10px;
+    color: chocolate;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.TextDiseño{
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.BotonDiseño{
+    margin-left: 50px;
+    margin-bottom: 10px;
+    background-color: #E07800;
+    font-weight: bold;
+    color: #FFF2E2;
+    font-size: 15px;
+    border:none;
+    cursor:pointer;
+    height: 25px;
+    width: 100px;
+}
+
+.contacto-contenido {
+    display: flex;
+    gap: 40px;
+    padding: 20px;
+    align-items: flex-start; 
+}
+
+
+#contacto-info{
+    flex: 1;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 2;
 }
