@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    
+    <title>Fast burger</title>
+</head>
+
+<body>
+
+    <script>
+        function showForm(tipo){
+            
+            //Obtener los contenedores 
+            const formRegistro = document.getElementById('form-Registro');
+            const formLogin = document.getElementById('form-Iniciodesesion');
+            const botones = document.querySelectorAll('.tab-btn');
+
+            if(tipo === 'registro'){
+                formRegistro.classList.remove('hidden');
+                formLogin.classList.add('hidden');
+                botones[0].classList.add('active');
+                botones[1].classList.remove('active');
+            } else{
+                formRegistro.classList.add('hidden');
+                formLogin.classList.remove('hidden');
+                botones[0].classList.remove('active');
+                botones[1].classList.add('active');
+            }
+        }
+
+    </script>
+
+    <div class = "container">
+        <div class= "tabs">
+            <button class = "tab-btn active" onclick="showForm('registro')">Registro</button>
+            <button class = "tab-btn" onclick="showForm('Login')">Inicio de sesion</button>
+        </div>
+
+        <div id = "form-Registro">
+        <h2>Registro de Perfil</h2>
+        <form action="#" method="POST" id = "formularioRegistro"> 
+            <div class = "form-group">
+                <label for = "nombre">Nombre</label> <br>
+                <input type = "text" id = "nombre" name = "nombre" placeholder="nombre completo" required>
+            </div>
+            <div class = "grid-row">
+                <div class = "form-group">
+                <label for = "Edad">Fecha de nacimiento</label> <br>
+                <input type = "date" id = "Edad" name =  "Edad" required>
+                </div>
+                
+            </div>
+            <div class = "grid-row">
+                <div class = "form-group">
+                    <label for = "telefono">Telefono</label> <br>
+                    <input type = "tel" id = "telefono" name = "telefono" placeholder="10 digitos" required>
+                </div>
+                <div class = "form-group">
+                    <label for = "Direccion">Direccion</label> <br>
+                    <input type = "Direccion" id = "Direccion" name = "Direccion" placeholder="Calle y Codigo Postal" required>
+                </div>
+            </div>
+            <div class = "grid-row">
+                <div class = "form-group">
+                    <label for = "Nombre de usuario">Nombre de usuario</label> <br>
+                    <input type = "text" id = "Nombre de usuario" name = "Nombre de usuario" placeholder="Como te conoceremos" required>
+                </div>
+                <div class = "form-group">
+                    <label for = "password">Contraseña</label> <br>
+                    <input type = "password" id = "password" name = "password" required>
+                </div>
+            </div>
+            <button type="submit">Registrar Informacion</button>
+            </form>
+        </div>
+
+        <div id = "form-Iniciodesesion" class="hidden">
+            <h2>Inicio de sesion</h2>
+            <form action="#" method="POST" id = "formularioIniciodesesion"> 
+            <div class = "form-group">
+                <label for = "Iniciodesesiondeusuario">Nombre de usuario</label> <br>
+                <input type = "text" id = "Iniciodesesion-Nombre de usuario" name = "Nombre de usuario" required>
+            </div>
+            <div class = "form-group">
+                <label for = "Iniciodeseion-password">Contraseña</label> <br>
+                <input type = "password" id = "Iniciodesesion-password" name = "password" required>
+            </div>
+            <button type="submit">Entrar</button>
+        </div>
+    </div>
+   
+</body>
+</html>
