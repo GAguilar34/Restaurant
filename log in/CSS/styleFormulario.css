@@ -1,0 +1,121 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffa500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;/*Asegura el contenedor y el footer se apilen en forma de columna*/
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.container{
+    background-color: rgb(48, 48, 48);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgb(255, 255, 255);
+    width: 100%;
+    max-width: 600px;
+}
+
+h2{
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+
+/*Diseño de botones de Inicio de sesion y Registro*/
+.tabs{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #eee;
+}
+
+.tab-btn{
+    padding: 10px 20px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fffafa;
+    transition: 0.3s;
+}
+
+.tab-btn.active{
+    color: #ffffff;
+    border-bottom: 3px solid #4A90E2;
+}
+
+/*Clase para ocultar el formulario*/
+.hidden{
+    display: none;
+}
+
+/*Diseño del formulario*/
+.form-group{
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+/*Diseño de las Label*/
+label{
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+/*Diseño de el input y del select*/
+input, select{
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+input:focus, select:focus{
+    outline: none;
+    border-color: #1878e6;
+    box-shadow: 0 0 5px rgba(74,144,226,0.3);
+}
+
+/*Boton de envio*/
+button{
+    width: 100%;
+    padding: 12px;
+    background-color: #4A90E2;
+    color: white;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+button :hover{
+    background-color: #357ABD;
+}
+
+/*Estilos para el footer*/
+footer{
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+    color: #777;
+    font-size: 14px;
+}
+
+/*Diseño Responsivo(Media Querys)*/
+@media(min-width: 768px){
+    /*En pantallas grandes, algunos campos pueden estar en dos columnas*/
+    .grid-row{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}
