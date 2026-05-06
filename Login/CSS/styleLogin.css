@@ -11,7 +11,7 @@ body{
 }
 
 .container{
-    background-color: rgb(48, 48, 48);
+    background-color:#8B5E3C;
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 8px 24px rgb(255, 255, 255);
@@ -86,7 +86,7 @@ input:focus, select:focus{
 button{
     width: 100%;
     padding: 12px;
-    background-color: #4A90E2;
+    background-color: #FFA040;
     color: white;
     border: none;
     font-size: 18px;
@@ -108,6 +108,11 @@ footer{
     margin-top: 20px;
     color: #777;
     font-size: 14px;
+}
+
+/*Clase en caso de que no se llenen todos los campos*/
+.error{
+    border-color: crimson;
 }
 
 /*Diseño Responsivo(Media Querys)*/

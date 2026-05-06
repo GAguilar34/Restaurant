@@ -29,6 +29,15 @@ body{
     font-size: 35px;
 }
 
+#Registro-InicioSesion{
+    background: none;
+    color: chocolate;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
 nav{
    background-color: white; 
    padding: 0.875rem 1.25rem;
